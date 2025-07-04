@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY4E - Python for Everybody</title>
+    <!-- Tiny bit of JS -->
+    <script src="https://static.tsugi.org/js/tsugiscripts_head.js"></script>
+    <!-- Le styles -->
+    <link href="https://static.tsugi.org/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://static.tsugi.org/js/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://static.tsugi.org/fontawesome-free-5.8.2-web/css/font-awesome.min.css" rel="stylesheet">
+
+      <style>:root {--primary:#0D47A1;
+--primary-menu:#0D47A1;
+--primary-border:#0d4295;
+--primary-darker:#0c4091;
+--primary-darkest:#0b3b85;
+--background-color:#FFFFFF;
+--background-focus:#F5F5F5;
+--background-accent:#0D47A1;
+--secondary:#EEEEEE;
+--secondary-menu:#EEEEEE;
+--text:#111111;
+--text-light:#5E5E5E;
+--font-family:sans-serif;
+--font-size:14px;
+}</style>
+      <link href="https://static.tsugi.org/css/tsugi.css" rel="stylesheet">
+   </head>
+<body>
+<div id="dialog-confirm" style="display:none;" title="The LTI Launch Failed">
+<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Detail: Session expired - please re-launch 03720416dec155f369a4d38238f88caa</p>
+</div>
+<script src="https://static.tsugi.org/js/jquery-1.11.3.js"></script>
+<script src="https://static.tsugi.org/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="https://static.tsugi.org/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<script src="https://static.tsugi.org/js/tsugiscripts.js"></script>
+<script>
+  $( function() {
+    $( "#dialog-confirm" ).dialog({
+      resizable: false,
+      height: "auto",
+      width: 400,
+      modal: true,
+      buttons: {
+        "Continue": function() {
+            window.location.href = "https://www.py4e.com/launcherror?detail=Session+expired+-+please+re-launch+03720416dec155f369a4d38238f88caa";
+        },
+      }
+    });
+  } );
+  </script>
+</body>
